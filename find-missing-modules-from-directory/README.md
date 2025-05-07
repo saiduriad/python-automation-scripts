@@ -1,3 +1,5 @@
+---
+
 # 🧩 Odoo Missing Module Finder CLI
 
 This script scans a custom Odoo addons directory and compares it to an exported `ir.module.module` CSV to find missing modules. It then outputs two CSV files: one for missing modules and one for found modules (sorted by author or any other field).
@@ -95,13 +97,6 @@ This will export two CSVs:
 * Exports the missing modules to a new CSV.
 * Exports the found modules to a new CSV.
 * Prints colorful logs and helpful suggestions. Yes, it’s dramatic.
-
----
-
-## 📁 Output
-
-* The **missing modules CSV** will include only the rows from your original CSV where the `Technical Name` doesn't exist as a directory in your addons folder.
-* The **found modules CSV** will include modules that were found in the directories, along with the directories they were located in.
 
 ---
 
